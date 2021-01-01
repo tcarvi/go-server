@@ -1,0 +1,179 @@
+/*
+ * Header: 
+ *    - Banner de informação e menu superior
+ */
+
+ .topHeader {
+    /* Layout */
+    display: block;
+    position: relative;
+    top: 0px;
+    z-index: 100;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Colors */
+    background-color: rgba(255,99,71,0.95);
+    /* Texts */
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    /* Overflow */
+    overflow: hidden;
+}
+
+#sectionBannerHeader {
+    /* Layout */
+    display: block;
+    position: relative;
+    top: 0px;
+    z-index: 100;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px;
+    border-style: none;
+    border-width: 0px;
+    padding: 20px;
+    width: 100%;
+    height: 3em;
+    /* Colors */
+    background-color: rgba(255,99,71,0.95);
+    /* Texts */
+    text-align: center;
+    font-size: 1em;
+    font-family: Verdana, Geneva, sans-serif;
+    /* Overflow */
+    overflow: hidden;
+}
+
+/*
+ * Footer: 
+ *    - Quadro de contato
+ */
+
+#sectionQuemSomosFooter {
+    /* Layout */
+    display: block;
+    position: relative;
+    z-index: 10;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    /* Colors */
+    background-color: rgba(215,140,105,0.41);    
+}
+
+#sectionQuemSomosFooter p {
+    padding: 20px;
+}
+/*
+ *
+ * Design de responsividade
+ *
+ */
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media only screen and (max-width: 400px) {
+    #topHeader {
+        /* Layout */
+        position: relative;
+    }
+    #sectionBannerHeader {
+        /* Box model */
+        height: 3em;
+    }
+    #sectionQuemSomosFooter {
+        width: 100%;
+    }
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #topHeader {
+        /* Layout */
+        position: relative;
+    }
+    #sectionBannerHeader {
+        /* Box model */
+        height: 4em;
+    }
+    #sectionQuemSomosFooter {
+        width: 100%;
+    }
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #topHeader {
+        /* Layout */
+        position: relative;
+    }
+    #sectionBannerHeader {
+        /* Box model */
+        height: 5em;
+    }
+    #sectionQuemSomosFooter {
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #topHeader {
+        /* Layout */
+        position: fixed;
+    }
+    #sectionBannerHeader {
+        /* Box model */
+        height: 6em;
+    }
+    #sectionQuemSomosFooter {
+        width: 100%;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #topHeader {
+        /* Layout */
+        position: fixed;
+    }
+    #sectionBannerHeader {
+        /* Box model */
+        height: 7em;
+    }
+    #sectionQuemSomosFooter {
+        width: 100%;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #topHeader {
+        /* Layout */
+        position: fixed;
+    }
+    #sectionBannerHeader {
+        /* Box model */
+        width: 100%;
+        height: 8em;
+    }
+    #sectionQuemSomosFooter {
+        width: 100%;
+    }
+}
