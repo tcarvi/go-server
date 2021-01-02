@@ -4,7 +4,7 @@
 
 #### Servidor 
 - Servidor ***GOLANG*** apenas executa comandos pré-definidos e genéricos deste projeto *e-commerce*.
-  - Para alterar comportamento do servidor, deve-se alterar o código-fonte que se encontra em [repositório do GitHub](https://github.com/eduardoleal1981/go-server). 
+  - Para alterar comportamento do servidor, deve-se alterar o código-fonte que se encontra em [repositório do GitHub](https://github.com/tcarvi/go-server). 
 - Há modelo de aplicativo WEB que deve ser customizado por você, em **SEU REPOSITÓRIO**.
   - Código-fonte do aplicativo WEB segue especificações publicadas por [W3C](https://www.w3.org/2019/06/htmlwg-charter.html).
   - Para a customização, deve-se acrescentar imagens gráficas, arquivos textuais e vídeos em **SEU REPOSITÓRIO**.
