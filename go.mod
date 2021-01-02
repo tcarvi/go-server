@@ -1,3 +1,3 @@
-module github.com/eduardoleal1981/go-server
+module github.com/tcarvi/go-server
 
 go 1.15

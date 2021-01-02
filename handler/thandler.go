@@ -29,8 +29,6 @@ func (tHandler THandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	//    com mensagem de alerta sobre uso criminoso da rede mundial de computadores.
 	// Fluxo seguinte não precisa de tratamento de segurança pois os dados a serem processados já foram validados.
 
-	logs(r)
-
 	if strings.HasPrefix(r.URL.Path, "/api") {
 		tServeAPI(w, r)
 	} else if strings.HasSuffix(r.URL.Path, ".js") {
@@ -59,7 +57,11 @@ func (tHandler THandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		tServePptx(w, r)
 	} else if strings.HasSuffix(r.URL.Path, "/v") {
 		fmt.Fprint(w, "Server 1.0")
+	} else if strings.HasSuffix(r.URL.Path, "/rebuild") {
+		fmt.Fprint(w, "Atualizar build da imagem")
 	}
+
+	logs(r)
 }
 
 func tServeAPI(w http.ResponseWriter, r *http.Request) {
