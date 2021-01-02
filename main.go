@@ -1,5 +1,5 @@
 /*
- * Server for static HTML and Files
+ * Server for static websites
  */
 package main
 
