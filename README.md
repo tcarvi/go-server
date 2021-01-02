@@ -20,7 +20,6 @@
   - add line: `export GOBIN=/yourGoBinDirectory`
   - add line: `export PATH=$PATH:$GOBIN`
   - add line: `export GOPATH=/yourGoPathDirectory`
-  - salve o arquivo e o feche. (`ctrl x ctrl z`)
 - `go install github.com/tcarvi/go-server`
 - `go-server`
 
