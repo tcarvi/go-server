@@ -21,11 +21,11 @@
   - add line: `export PATH=$PATH:$GOBIN`
   - add line: `export GOPATH=/yourGoPathDirectory`
   - salve o arquivo e o feche. (`ctrl x ctrl z`)
-- `go install github.com/eduardoleal1981/go-server`
+- `go install github.com/tcarvi/go-server`
 - `go-server`
 
 # Instalação com container *docker*:
-- `docker run -d -p 8080:8080 eduardoleal1981/go-server:latest`
+- `docker run -d -p 8080:8080 tcarvi/go-server:latest`
   - -p [host port]:[container port]
   - A porta do container é a mesma publicada/escutada pelo código do servidor
 
