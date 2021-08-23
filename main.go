@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/eduardoleal1981/go-server/handler"
+	"github.com/tcarvi/go-server/handler"
 )
 
 func main() {
@@ -17,4 +17,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
 }
